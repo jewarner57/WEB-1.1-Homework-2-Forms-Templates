@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Compliments Results</title>
-    </head>
-    <body>
-        <!-- Your HTML code goes here! -->
 
-        
+<head>
+    <title>Compliments Results</title>
+</head>
 
-        
-        
-    </body>
+<body>
+    <!-- Your HTML code goes here! -->
+
+    <p>Hello there, {{users_name}}</p>
+
+    <ul>
+        {% for compliment in compliments %}
+        <li>{{compliment}}</li>
+        {% endfor %}
+    </ul>
+
+
+</body>
+
 </html>
